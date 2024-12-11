@@ -2,6 +2,7 @@ import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 
 export const FadeIn = () => {
   const frame = useCurrentFrame();
+  console.log(frame);
 
   // const opacity = Math.min(1, frame / 60);
   const opacity = interpolate(frame, [0, 60], [0, 1], {

@@ -1,4 +1,4 @@
-import { spring } from "remotion";
+import { spring, staticFile, Audio } from "remotion";
 import {
   AbsoluteFill,
   interpolate,
@@ -70,6 +70,9 @@ export const HelloWorld: React.FC<z.infer<typeof myCompSchema>> = ({
         <Sequence from={75}>
           <Subtitle />
         </Sequence>
+      </AbsoluteFill>
+      <AbsoluteFill>
+        <Audio src={staticFile("audio.mp3")} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
